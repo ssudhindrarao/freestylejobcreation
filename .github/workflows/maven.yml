@@ -48,5 +48,5 @@ jobs:
         #Step 6
     - name: Trigger Jenkins Job
       run: |
-        curl -X POST http://54.234.80.226:8080/job/pipeline/build \
+        curl -X POST http://54.226.193.113:8080/job/pipeline/build \
         --user $JENKINS_USER:$JENKINS_API_TOKEN
