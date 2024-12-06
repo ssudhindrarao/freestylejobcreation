@@ -44,3 +44,9 @@ jobs:
       with:
         name: test-results
         path: target/surefire-reports/
+
+        #Step 6
+    - name: Trigger Jenkins Job
+      run: |
+        curl -X POST http://54.234.80.226:8080/job/pipeline/build \
+        --user $JENKINS_USER:$JENKINS_API_TOKEN
